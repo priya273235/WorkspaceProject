@@ -1,0 +1,23 @@
+package Edureka.project;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+
+public class AppTest 
+{
+    
+    @Test
+    public static void main(String[] args) {
+    	 System.setProperty("webdriver.chrome.driver","/home/edureka/eclipse-workspace/project/driver/chromedriver");
+    	 ChromeOptions chromeOptions = new ChromeOptions();
+    	 WebDriver driver = new ChromeDriver(chromeOptions);
+    	 System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium  WebDriver");
+    			 driver.get("http://localhost:8090/addressbook");
+
+    }
+}
